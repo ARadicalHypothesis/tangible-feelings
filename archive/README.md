@@ -5,6 +5,7 @@ Original documents from the *Tangible Feelings* workshop series, kept as they we
 | File | What it is |
 |---|---|
 | [2011-imal-talk-and-workshop-proposal.pdf](2011-imal-talk-and-workshop-proposal.pdf) | The talk and workshop proposal sent to iMAL, Brussels, in July 2011. It set out the format used in every later edition: a talk of about 90 minutes on EEG, brainwaves and EEG-based media art, and a hands-on workshop of about six hours on the Emotiv SDK, OSC, Max/MSP/Jitter and vvvv. |
+| [wiki-2012.md](wiki-2012.md) | The text of the workshops' 2011–2012 wiki (home page and Taipei page) and its list of software resources, recovered from the Wayback Machine, with working or archived links. |
 
 ## Text of the 2011 proposal
 
@@ -39,4 +40,4 @@ During the workshop we'll discuss the Emotiv SDK and hardware, and we will demon
 
 ## Rights
 
-The documents in this folder are © 2011 Mattia Casalegno and Enzo Varriale. They are shared here as archival records for reference. The CC BY 4.0 licence in [LICENSE.md](../LICENSE.md) does not apply to them.
+The proposal is © 2011 Mattia Casalegno and Enzo Varriale. The wiki text keeps its original CC BY-SA 3.0 licence. They are shared here as archival records for reference. The CC BY 4.0 licence in [LICENSE.md](../LICENSE.md) does not apply to them.
