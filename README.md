@@ -1,6 +1,6 @@
 # Tangible Feelings: EEG for the Arts
 
-A traveling workshop on brain–computer interfaces for artists, developed by [Mattia Casalegno](https://www.mattiacasalegno.net) and Enzo Varriale ( [Lanvideosource](https://vimeo.com/lanvideosource) ). Between 2011 and 2013 it taught artists, VJs and designers to read brain activity with a consumer EEG headset and turn it into sound and image, building their own real-time audiovisual tools.
+A traveling workshop on brain–computer interfaces for artists, developed by [Mattia Casalegno](https://www.mattiacasalegno.net) and Enzo Varriale ( [Lanvideosource](https://vimeo.com/lanvideosource) ). Between 2011 and 2013 it taught artists, VJs and designers to read brain activity with EEG headsets and turn it into sound and image, building their own real-time audiovisual tools.
 
 **Project page:** https://aradicalhypothesis.github.io/tangible-feelings/
 
