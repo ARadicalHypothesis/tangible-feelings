@@ -7,7 +7,7 @@
 <meta name="description" content="Tangible Feelings (2011–2013): a traveling workshop on brain–computer interfaces for artists by Mattia Casalegno and Enzo Varriale. Brussels, Taipei, Rome, Porto, Cape Town.">
 <meta property="og:title" content="Tangible Feelings: EEG for the Arts">
 <meta property="og:description" content="A traveling workshop on brain–computer interfaces for artists, 2011–2013.">
-<meta property="og:image" content="https://live.staticflickr.com/6163/6158549553_bc5bebaf70_b.jpg">
+<meta property="og:image" content="https://live.staticflickr.com/6170/6168853927_3be21137a0_c.jpg">
 <meta property="og:url" content="https://aradicalhypothesis.github.io/tangible-feelings/">
 <link rel="canonical" href="https://aradicalhypothesis.github.io/tangible-feelings/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,6 +101,26 @@
 
   figure { margin: 32px -44px; }
   figure img { display: block; width: 100%; height: auto; background: #ddd; }
+  .carousel { position: relative; }
+  .carousel .track {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; scrollbar-width: none; background: #1f1f1f;
+  }
+  .carousel .track::-webkit-scrollbar { display: none; }
+  .carousel .track:focus-visible { outline: 2px solid var(--ink-strong); outline-offset: 2px; }
+  .carousel .slide { flex: 0 0 100%; scroll-snap-align: center; margin: 0; aspect-ratio: 3 / 2; }
+  .carousel .slide a { display: block; height: 100%; }
+  .carousel .slide img { width: 100%; height: 100%; object-fit: cover; }
+  .carousel .nav {
+    position: absolute; top: calc(50% - 34px); width: 44px; height: 44px;
+    border: 0; border-radius: 50%; background: rgba(255,255,255,.85); color: var(--ink-strong);
+    font: 28px/44px Karla, sans-serif; cursor: pointer; padding: 0;
+  }
+  .carousel .nav:hover { background: #fff; }
+  .carousel .prev { left: 14px; }
+  .carousel .next { right: 14px; }
+  .carousel .count { color: var(--ink-strong); font-variant-numeric: tabular-nums; margin-right: 8px; }
   figcaption { font-size: 12px; color: var(--muted); padding: 8px 44px 0; }
   figcaption a { color: var(--muted); }
 
@@ -142,18 +162,32 @@
     <p class="kicker">Workshop series · 2011–2013</p>
     <h1>Tangible Feelings<span>EEG for the Arts</span></h1>
 
-    <p class="lede"><em>Tangible Feelings</em> was a traveling workshop on brain–computer interfaces for artists, developed by Mattia Casalegno and Enzo Varriale (Lanvideosource). Between 2011 and 2013 it taught artists, VJs and designers to read brain activity with a consumer EEG headset and turn it into sound and image, building their own real-time audiovisual tools.</p>
+    <p class="lede"><em>Tangible Feelings</em> was a traveling workshop on brain–computer interfaces for artists, developed by Mattia Casalegno and Enzo Varriale (<a href="https://vimeo.com/lanvideosource">Lanvideosource</a>). Between 2011 and 2013 it taught artists, VJs and designers to read brain activity with EEG headsets and turn it into sound and image, building their own real-time audiovisual tools.</p>
 
     <p>It began at iMAL in Brussels, as part of the <em>Tangible Feelings</em> symposium on EEG and biofeedback for the arts, and traveled to Taipei, Rome, Porto and Cape Town. The workshop drew on two earlier EEG-based works: the audiovisual performance <em>Sounds of Complexity</em> (Kinotek, 2004–2007) and the installation <em>Unstable Empathy</em> (2010).</p>
 
-    <figure>
-      <a href="https://www.flickr.com/photos/malicy/6158549553/">
-        <img src="https://live.staticflickr.com/6163/6158549553_bc5bebaf70_b.jpg"
-             width="1023" height="682"
-             alt="Participants at the Tangible Feelings workshop at iMAL, Brussels, 2011"
-             loading="lazy">
-      </a>
-      <figcaption>Tangible Feelings workshop, iMAL, Brussels, September 2011. Photo: iMAL, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>.</figcaption>
+    <figure class="carousel" aria-roledescription="carousel" aria-label="Photos from the Brussels workshop">
+      <ul class="track" tabindex="0">
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158548371/"><img src="https://live.staticflickr.com/6193/6158548371_cfc8ca8377_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 1 of 16"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158548583/"><img src="https://live.staticflickr.com/6086/6158548583_3da0f1072b_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 2 of 16"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6159088964/"><img src="https://live.staticflickr.com/6174/6159088964_4da891b07c_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 3 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158549105/"><img src="https://live.staticflickr.com/6156/6158549105_411105022d_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 4 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6159089362/"><img src="https://live.staticflickr.com/6200/6159089362_bd1728a1fd_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 5 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158549427/"><img src="https://live.staticflickr.com/6184/6158549427_0cf2100d86_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 6 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158549553/"><img src="https://live.staticflickr.com/6163/6158549553_bc5bebaf70_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 7 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158549709/"><img src="https://live.staticflickr.com/6193/6158549709_7a1e0a468e_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 8 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6159089952/"><img src="https://live.staticflickr.com/6181/6159089952_80a5f2059f_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 9 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158550005/"><img src="https://live.staticflickr.com/6065/6158550005_af9f4738d3_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 10 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6159090182/"><img src="https://live.staticflickr.com/6190/6159090182_38404e20a8_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 11 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6158550253/"><img src="https://live.staticflickr.com/6198/6158550253_df5450894c_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 12 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6168853927/"><img src="https://live.staticflickr.com/6170/6168853927_3be21137a0_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 13 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6169389558/"><img src="https://live.staticflickr.com/6161/6169389558_53099ff19d_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 14 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6168857065/"><img src="https://live.staticflickr.com/6157/6168857065_9752a5e0e1_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 15 of 16" loading="lazy"></a></li>
+        <li class="slide"><a href="https://www.flickr.com/photos/8579109@N08/6169390416/"><img src="https://live.staticflickr.com/6167/6169390416_7b6684ba1c_c.jpg" width="800" height="533" alt="Tangible Feelings workshop at iMAL, Brussels, 2011, photo 16 of 16" loading="lazy"></a></li>
+      </ul>
+      <button class="nav prev" type="button" aria-label="Previous photo">‹</button>
+      <button class="nav next" type="button" aria-label="Next photo">›</button>
+      <figcaption><span class="count">1 / 16</span> Tangible Feelings workshop, iMAL, Brussels, 17–18 September 2011. Photos: iMAL, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>, <a href="https://www.flickr.com/search/?user_id=8579109%40N08&amp;text=tangible%20feelings%20workshop">on Flickr</a>.</figcaption>
     </figure>
 
     <h2>Curriculum</h2>
@@ -180,23 +214,23 @@
     <ul class="editions">
       <li>
         <div class="place">Brussels<small>September 2011</small></div>
-        <div>iMAL, Center for Digital Cultures and Technology, 17–18 September 2011. Workshop by Mattia Casalegno and Enzo Varriale, part of the <em>Tangible Feelings</em> symposium.</div>
+        <div><a href="https://www.imal.org/">iMAL</a>, Center for Digital Cultures and Technology, 17–18 September 2011. Workshop by Mattia Casalegno and Enzo Varriale, part of the <em>Tangible Feelings</em> symposium (<a href="https://web.archive.org/web/20171018042515/http://www.imal.org/en/more/tangible-feelings-workshop">archived workshop page</a>).</div>
       </li>
       <li>
         <div class="place">Taipei<small>January 2012</small></div>
-        <div>Digital Art Center, January 2012.</div>
+        <div><a href="https://dac.taipei/">Digital Art Center, Taipei</a>, January 2012.</div>
       </li>
       <li>
         <div class="place">Rome<small>May–June 2012</small></div>
-        <div>LPM Live Performers Meeting, Planet Alpheus, 31 May – 3 June 2012. <em>EmotiVVVV!</em>, the EEG module of <a href="https://liveperformersmeeting.net/editions/2012-rome/program/detail/vvvv-brainwaves-for-av-performance-100/">VVVV &amp; brainwaves for AV performance</a>, led by Enzo Varriale with Mattia Casalegno and Kinotek and produced with iMAL as part of <em>Tangible Feelings</em> (<a href="https://vvvv.org/blog/2012/workshop-in-rome-vvvv-brainwaves-for-av">announcement on the vvvv blog</a>).</div>
+        <div><a href="https://liveperformersmeeting.net/">LPM Live Performers Meeting</a>, Planet Alpheus, 31 May – 3 June 2012. <em>EmotiVVVV!</em>, the EEG module of <a href="https://liveperformersmeeting.net/editions/2012-rome/program/detail/vvvv-brainwaves-for-av-performance-100/">VVVV &amp; brainwaves for AV performance</a>, led by Enzo Varriale with Mattia Casalegno and Kinotek and produced with iMAL as part of <em>Tangible Feelings</em> (<a href="https://vvvv.org/blog/2012/workshop-in-rome-vvvv-brainwaves-for-av">announcement on the vvvv blog</a>).</div>
       </li>
       <li>
         <div class="place">Porto<small>November 2012</small></div>
-        <div>ARTES, contemporary art programme of the Fundação Manuel António da Mota, two week-long workshops, 12–16 and 19–23 November 2012, with the support of MuARTs.</div>
+        <div>ARTES, contemporary art programme of the <a href="https://www.fmam.pt/">Fundação Manuel António da Mota</a>, two week-long workshops, 12–16 and 19–23 November 2012, with the support of MuARTs.</div>
       </li>
       <li>
         <div class="place">Cape Town<small>November 2013</small></div>
-        <div>LPM Live Performers Meeting, City Hall, 13–16 November 2013: <a href="https://liveperformersmeeting.net/editions/2013-cape-town/program/detail/av-performances-with-eeg-interfaces-100-r1250/">AV Performances with EEG interfaces</a>.</div>
+        <div><a href="https://liveperformersmeeting.net/">LPM Live Performers Meeting</a>, <a href="https://en.wikipedia.org/wiki/Cape_Town_City_Hall">Cape Town City Hall</a>, 13–16 November 2013: <a href="https://liveperformersmeeting.net/editions/2013-cape-town/program/detail/av-performances-with-eeg-interfaces-100-r1250/">AV Performances with EEG interfaces</a>.</div>
       </li>
     </ul>
 
@@ -208,5 +242,30 @@
     © Mattia Casalegno · <a href="https://www.mattiacasalegno.net/">mattiacasalegno.net</a> · <a href="https://github.com/ARadicalHypothesis/tangible-feelings">Source on GitHub</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
   </footer>
 </div>
+<script>
+(function () {
+  var c = document.querySelector('.carousel');
+  if (!c) return;
+  var track = c.querySelector('.track'), n = track.children.length;
+  var count = c.querySelector('.count'), cur = 0, t;
+  function show() { count.textContent = (cur + 1) + ' / ' + n; }
+  function go(i) {
+    cur = (i + n) % n; show();
+    track.scrollTo({ left: cur * track.clientWidth });
+  }
+  c.querySelector('.prev').addEventListener('click', function () { go(cur - 1); });
+  c.querySelector('.next').addEventListener('click', function () { go(cur + 1); });
+  track.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1); }
+  });
+  // keep the counter right after swiping
+  track.addEventListener('scroll', function () {
+    clearTimeout(t);
+    t = setTimeout(function () { cur = Math.round(track.scrollLeft / track.clientWidth); show(); }, 150);
+  });
+  window.addEventListener('resize', function () { track.scrollTo({ left: cur * track.clientWidth, behavior: 'instant' }); });
+})();
+</script>
 </body>
 </html>
