@@ -40,6 +40,7 @@ Each edition combined a talk with hands-on sessions.
 ## In this repository
 
 - `index.html`: the project page, published with GitHub Pages
+- `archive/`: original documents, starting with the 2011 talk and workshop proposal to iMAL
 - `assets/slideshow.webp`: the slideshow above, made from iMAL's photos (CC BY-NC-SA 2.0)
 - `images/`: photographs from the editions
 
